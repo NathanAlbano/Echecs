@@ -5,25 +5,7 @@ Last modification: 12/18/2024
 
 Description: A Python class introducing every piece used in a chessboard game.
 """
-
-# Dictionary mapping piece types to their values
-VALUE = {
-    1: "pawn",
-    3: "knight",
-    3: "bishop",
-    5: "rook",
-    9: "queen",
-    0: "king"
-}
-
-NATURE = {
-    1: "pawn",
-    2: "knight",
-    3: "bishop",
-    4: "rook",
-    5: "queen",
-    6: "king"
-}
+from resources.global_variables import NB_SQUARES, NATURE
 
 class Piece:
     def __init__(self, nature, x, y, value, side):
