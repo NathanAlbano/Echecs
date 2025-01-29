@@ -6,7 +6,7 @@ Last modification: 12/18/2024
 Description: A python class introducing a chessboard's mathematical representation 
 """
 import numpy as np
-from resources.global_variables import NB_SQUARES, NATURE
+from ..resources.global_variables import NB_SQUARES, NATURE
 
 class Chessboard:
     '''
@@ -32,3 +32,4 @@ class Chessboard:
 ## === TEST SECTION === ##
 test = Chessboard()
 print(test.index_to_square[(7,7)])
+print(test.chessboard)

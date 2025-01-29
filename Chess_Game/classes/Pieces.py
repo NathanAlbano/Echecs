@@ -5,7 +5,7 @@ Last modification: 12/18/2024
 
 Description: A Python class introducing every piece used in a chessboard game.
 """
-from resources.global_variables import NB_SQUARES, NATURE
+from ..resources.global_variables import NB_SQUARES, NATURE, VALUE
 
 class Piece:
     def __init__(self, nature, x, y, value, side):
