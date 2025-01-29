@@ -3,20 +3,22 @@ NB_SQUARES = 8
 
 # Dictionary mapping piece types to their values
 VALUE = {
-    1: "pawn",
-    3: "knight",
-    3: "bishop",
-    5: "rook",
-    9: "queen",
-    0: "king"
+    "square": 0,
+    "pawn": 1,
+    "knight": 3,
+    "bishop": 3,
+    "rook": 5,
+    "queen": 9,
+    "king": 10
 }
 
 # Dictionary mapping integers to their associated piece
 NATURE = {
-    1: "pawn",
-    2: "knight",
-    3: "bishop",
-    4: "rook",
-    5: "queen",
-    6: "king"
+    "square": 0,
+    "pawn": 1,
+    "knight": 2,
+    "bishop": 3,
+    "rook": 4,
+    "queen": 5,
+    "king": 6
 }

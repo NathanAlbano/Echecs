@@ -8,11 +8,11 @@ Description: A Python class introducing every piece used in a chessboard game.
 from ..resources.global_variables import NB_SQUARES, NATURE, VALUE
 
 class Piece:
-    def __init__(self, nature, x, y, value, side):
+    def __init__(self, nature, x, y, side):
         self.nature = nature  # Type of piece (king, queen, rook, etc.)
         self.x = x  # X-coordinate (column)
         self.y = y  # Y-coordinate (row)
-        self.value = value  # Piece value (e.g., 1 for pawn, 9 for queen)
+        self.value = VALUE[nature]  # Piece value (e.g., 1 for pawn, 9 for queen)
         self.side = side  # "white" or "black"
 
     def move(self, new_x, new_y):
@@ -52,7 +52,7 @@ class Piece:
         return f"{self.nature}({self.x}, {self.y}, {self.side})"
 
 # Example usage
-p1 = Piece(NATURE[1], 1, 1, VALUE[3], "white")
+p1 = Piece("bishop", 1, 1, "white")
 print(p1.move(1, 4))  # True (valid move)
 print(p1.move(3, 3))  # True (valid move)
 print(p1.move(4, 5))  # True (valid move)

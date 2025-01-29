@@ -7,7 +7,8 @@ Description: A python script to run the chess game with user interface
 """
 import subprocess
 
-file = "classes.Chessboard"
+# file = "classes.Chessboard"
+file = "classes.Pieces"
 
 # Using system() method to
 # execute shell commands

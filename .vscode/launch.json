@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Chessboard (Module)",
+            "type": "python",
+            "request": "launch",
+            "module": "Chess_Game.classes.Chessboard",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"  // Ajoute le dossier racine de votre projet au PYTHONPATH
+            }
+        }
+    ]
+}
