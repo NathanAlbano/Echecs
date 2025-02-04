@@ -50,10 +50,11 @@ class Piece:
 
     def __repr__(self):
         return f"{self.nature}({self.x}, {self.y}, {self.side})"
-
+'''
 # Example usage
 p1 = Piece("bishop", 1, 1, "white")
 print(p1.move(1, 4))  # True (valid move)
 print(p1.move(3, 3))  # True (valid move)
 print(p1.move(4, 5))  # True (valid move)
 print(p1.move(2, 1))  # True (valid move)
+'''
