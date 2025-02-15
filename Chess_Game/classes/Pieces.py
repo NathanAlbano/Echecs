@@ -14,6 +14,7 @@ class Piece:
         self.y = y  # Y-coordinate (row)
         self.value = VALUE[nature]  # Piece value (e.g., 1 for pawn, 9 for queen)
         self.side = side  # "white" or "black"
+        self.is_pinned = False # Is the piece pinned ?
 
     def move(self, new_x, new_y):
         """Checks if the move is valid before updating the position."""

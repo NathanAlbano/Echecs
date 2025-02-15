@@ -12,8 +12,7 @@ from ..resources.global_variables import NB_SQUARES, NATURE
 class Chessboard:
     '''
     No parameters to build the chessboard.
-    The chessboard is represented by an integer array. Each piece has a different numero, 0 meaning that no pieces is 
-    on a square. You can find the different pieces' numero in ./Pieces.py
+    The chessboard is represented by an pieces array. You can find the different pieces' numero in ./Pieces.py
     '''
     def __init__(self):
         '''
@@ -61,9 +60,9 @@ class Chessboard:
     def print_chessboard(self):
         print(self.chessboard)
 
-
+'''
 ## === TEST SECTION === ##
 test = Chessboard()
 print(test.index_to_square[(7,7)])
 print(test.chessboard)
-
+'''
